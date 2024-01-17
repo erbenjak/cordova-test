@@ -19,12 +19,18 @@ workflows:
       - name: Install dependencies
         script: |
           npm install
+          echo "step 1"
           npm ci # equivalent of npm install for CI systems.
             # Requires package-lock.json or npm-shrinkwrap.json to be present
+          echo "step 2"
           cvm install 9.0.0
+          echo "step 3"
           cvm use 9.0.0
+          echo "step 4"
           npm install -g ionic
+          echo "step 5"
           ionic info
+          echo "step 6"
       - name: Setup iOS
         script: |
           ionic cordova platform remove ios --nosave
