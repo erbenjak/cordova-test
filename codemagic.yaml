@@ -23,7 +23,7 @@ workflows:
           npm ci # equivalent of npm install for CI systems.
             # Requires package-lock.json or npm-shrinkwrap.json to be present
           echo "step 2"
-          cvm install 9.0.0
+          cvm install 1.16.0
           echo "step 3"
           cvm use 9.0.0
           echo "step 4"
