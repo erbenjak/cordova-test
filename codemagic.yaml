@@ -27,7 +27,7 @@ workflows:
           echo "step 3"
           cvm use 9.0.0
           echo "step 4"
-          npm install -g ionic
+          npm install -g @ionic/cli
           echo "step 5"
           ionic info
           echo "step 6"
