@@ -81,7 +81,7 @@ workflows:
       # NOTE: signing disabled for now
       #android_signing:
       #  - keystore_reference
-      xcode: 12.4
+      xcode: latest
       node: 12
       npm: 6
     triggering:
